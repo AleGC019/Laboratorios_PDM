@@ -12,7 +12,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="@dimen/small"
+        android:background="@color/cardview_dark_background"
         tools:context=".MainActivity">
+
 
 
         <TextView
@@ -21,40 +23,24 @@
             android:text="@string/bienvenido"
             android:gravity="center"
             android:textSize="@dimen/big_text"
-            android:typeface="monospace"/>
+            android:typeface="monospace"
+            android:textColor="@color/white"/>
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/android_toy"/>
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/programacion"
-            android:textSize="@dimen/big_text"
-            android:gravity="center"
-            android:typeface="monospace"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/dispositivos"
-            android:textSize="@dimen/big_text"
-            android:gravity="center"
-            android:typeface="monospace"
-            />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/moviles"
+            android:text="@string/full_text"
             android:layout_gravity="center"
+            android:gravity="center"
             android:textSize="@dimen/big_text"
             android:typeface="monospace"
-            />
+            android:padding="8dp"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
