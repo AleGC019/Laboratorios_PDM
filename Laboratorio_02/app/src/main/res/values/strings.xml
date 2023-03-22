@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Laboratorio02</string>
+    <string name="name_app_display">BMI</string>
+    <string name="kilograms_text">Kg</string>
+    <string name="cm_text">cm</string>
+    <string name="value">Weight</string>
+    <string name="status_value">Healthy</string>
+    <string name="info_value">Weight</string>
+</resources>
