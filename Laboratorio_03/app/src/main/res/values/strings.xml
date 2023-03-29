@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Laboratorio_03</string>
+    <string name="five_cents">$0.05</string>
+    <string name="ten_cents">$0.10</string>
+    <string name="tf_cents">$0.25</string>
+    <string name="one_dollar">$1</string>
+</resources>
