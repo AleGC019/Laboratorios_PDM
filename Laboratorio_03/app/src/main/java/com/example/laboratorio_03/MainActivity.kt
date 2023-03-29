@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         bind()
         MoneyText.text = "$$cash"
         listeners()
-        
+
     }
 
     private fun listeners(){
