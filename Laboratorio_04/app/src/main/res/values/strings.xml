@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Laboratorio_04</string>
+    <string name="nombre_hint">Nombre</string>
+    <string name="email_hint">Email</string>
+    <string name="telefono_hint">Teléfono</string>
+    <string name="guardar_text">Guardar</string>
+    <string name="namefield">Nombre: %s</string>
+    <string name="emailfield">Email: %s</string>
+    <string name="telefonofield">Teléfono: %s</string>
+    <string name="share_text">Compartir</string>
+</resources>
