@@ -1,0 +1,29 @@
+Carlos Alejandro Gómez Campos - 00083521
+
+5. To do:
+
+
+1. En la pantalla de la segunda actividad hay un botón para compartir
+   la información que se muestra en pantalla. De momento carece de
+   funcionalidad. Tienes que hacer que sea posible compartir dicha
+   información con distintas aplicaciones.
+   
+Realizado.
+	
+	
+2. Menciona los tipos de intents que existen y un ejemplo de cada
+   uno
+   
+Existen dos tipos de intents 
+
+a) Explicitos, este tipo de intent responde a la necesidad de compartir elementos dentro de los componentes de la aplicación, es decir, en esencia un medio para pasar elementos (un estilo de pipe).
+
+b) Implícitos, estos tipos de intent responden a la necesidad de compartir elementos de información con otras aplicaciones, como por ejemplo textos simples o en binario (según se configure). En esencia es un componente que permite compartir elementos con otros componentes del sistema.
+
+   
+
+3. En qué estado de la aplicación se inicializan las variables y se crea
+   la vista
+   
+En el estado "onCreate()" se crea la actividad como a su vez ocurre el proceso de inicialización de las variables.
+
