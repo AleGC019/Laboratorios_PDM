@@ -1,0 +1,25 @@
+Carlos Alejandro Gómez Campos
+
+
+1. ¿Qué diferencia existe entre navegar dentro de la aplicación utilizando
+Navigation Component o hacer uso de intents?
+
+La diferencia principal entre los elementos radica en su comportamiento, 
+es decir, mientras "intent" provee la habilidad de enviar mensajes por objetos 
+(indicando destinatario), al estilo "pasar la pelota", Navigation permite 
+desplazarse a diferentes destino con acciones (conexiones logicas) establecidas dentro del "gra_nav".
+
+2. Menciona los componentes fundamentales de Navigation
+Component
+
+Los componentes principales para su ejecución son
+- Gráfico de navegación
+- NavHost
+- NavController
+
+
+3. Mencione algunas de las ventajas del Navigation Graph
+
+- Es posible administrar los procesos de fragmentos.
+- Se puede configurar animaciones.
+- Tiene totalcompatibilidad con ViewModel.
