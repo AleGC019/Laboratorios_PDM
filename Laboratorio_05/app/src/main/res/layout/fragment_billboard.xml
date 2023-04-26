@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundLayout"
     android:padding="@dimen/medium_padding"
-    tools:context=".BillboardFragment">
+    tools:context=".ui.movie.BillboardFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

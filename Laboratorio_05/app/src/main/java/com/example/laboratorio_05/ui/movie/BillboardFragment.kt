@@ -1,4 +1,4 @@
-package com.example.laboratorio_05
+package com.example.laboratorio_05.ui.movie
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
+import com.example.laboratorio_05.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class BillboardFragment : Fragment() {
