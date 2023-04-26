@@ -1,0 +1,16 @@
+Carlos Alejandro Gómez Campos - 00083521}
+
+1. ¿En qué consiste el patrón de diseño Repository?
+
+El objetivo del praton es aíslar la capa de datos del resto de la aplicación. Dicha capa hace 
+referencia a a parte que controla los datos y lógica empresarial, separando los componentes visuales,
+los que expone APIs coherentes de modo que el resto de la apliación accesada a esos datos. De dicha 
+forma la UI presenta información al usuario. 
+
+En esencia un repositorio resuelve conflictos entre fuentes de datos y centralziar los cambios en 
+estos datos.
+
+2. ¿Qué es el ViewModel?
+
+La esencia de ViewModel es una lógica empresarial en donde expone el estado a la UI y encapsula
+la lógica empresarial relacionada. Esto quiere decir que la UI no debe recuperar datos cuandos navegas entre actividades o si sigues cambios de configuración.
