@@ -37,26 +37,40 @@ class CreateMovieFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.buttonSubmit.setOnClickListener {
-            createMovie()
+        setViewModel()
+        setObserver()
+    }
+
+    private fun setViewModel(){
+        binding.viewmodel = viewModel
+    }
+
+    private fun setObserver(){
+        viewModel.status.observe(viewLifecycleOwner){status ->
+            when{
+                status.equals(MovieViewModel.MOVIE_CREATED) -> {
+                    Log.d("TAG APP", viewModel.getMovies().toString())
+                    Log.d("TAG APP", status)
+
+                    viewModel.clearStatus()
+                    viewModel.clearData()
+
+                    findNavController().popBackStack()
+                }
+
+                status.equals(MovieViewModel.MOVIE_DELETED) -> {
+                    Log.d("TAG APP", status)
+                    viewModel.clearStatus()
+                }
+
+            }
+
         }
+
     }
 
-    private fun createMovie(){
-        val newMovie = MovieModel(
-            binding.newmoviename.text.toString(),
-            binding.newdescriptionmovie.text.toString(),
-            binding.newcategorymovie.text.toString(),
-            binding.newcalificationmovie.text.toString()
-        )
 
 
-        viewModel.addMovie(newMovie)
-
-        Log.d("TAG APP", viewModel.getMovies().toString())
-
-        findNavController().popBackStack()
-    }
 
 
 
