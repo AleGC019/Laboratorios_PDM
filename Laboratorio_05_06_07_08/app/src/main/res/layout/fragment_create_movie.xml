@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.movie.newmovie.CreateMovieFragment">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.laboratorio_05.ui.movie.viewmodel.MovieViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/medium_padding"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/backgroundLayout">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Movie"
+            android:textSize="@dimen/big_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingBottom="@dimen/medium_extra_padding"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_name"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:paddingBottom="@dimen/medium_extra_padding"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newmoviename"
+                android:text="@={viewmodel.name}"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/cardLayout"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_category"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:paddingBottom="@dimen/medium_extra_padding"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcategorymovie"
+                android:text="@={viewmodel.category}"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:background="@color/cardLayout"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_description"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:paddingBottom="@dimen/medium_extra_padding"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newdescriptionmovie"
+                android:text="@={viewmodel.description}"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:background="@color/cardLayout"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_calification"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            android:paddingBottom="@dimen/medium_extra_padding"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/newcalificationmovie"
+                android:text="@={viewmodel.qualifier}"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:background="@color/cardLayout"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:backgroundTint="@color/buttonColor"
+            android:textSize="@dimen/text_button_size"
+            android:onClick="@{() -> viewmodel.createMovie()}">
+
+        </Button>
+
+
+
+
+    </LinearLayout>
+
+
+</layout>
+

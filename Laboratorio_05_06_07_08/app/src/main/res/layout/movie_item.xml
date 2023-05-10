@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardMovie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_card"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="@color/cardLayout"
+            android:clickable="true"
+            app:cardCornerRadius="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/inf"
+                    app:shapeAppearanceOverlay="@style/roundImageview"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/movie_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movie_text"
+                        android:textColor="@color/white"
+                        android:textSize="21sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/movie_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/calification"
+                        android:textColor="@color/calification"
+                        android:textSize="30sp">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/edit_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/icon_height"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_edit"
+                            android:background="@color/buttonColor"
+                            app:shapeAppearanceOverlay="@style/roundImageview02"
+                            >
+
+                        </com.google.android.material.imageview.ShapeableImageView>
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/delete_icon"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/icon_height"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_delete"
+                            android:background="@color/buttonColor"
+                            app:shapeAppearanceOverlay="@style/roundImageview02"
+                            >
+
+                        </com.google.android.material.imageview.ShapeableImageView>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>
