@@ -1,0 +1,27 @@
+Carlos Alejandro Gómez Campos
+
+
+1. ¿Cuál es la principal ventaja de utilizar Recycler View?
+
+Recycler View se convierte en una herramienta muy versátil en el desarrollo de una aplicación,
+su ventaja principal es la tanto la carga como desarrollo de los elementos que son visibles en 
+pantalla; permitiendo un mejor usos de recursos en el sistema y un desarrollo mas sencillo en 
+elementos que poseen la misma disposición de despliegue de la información.
+
+2. Menciona los componentes de RecyclerView y la función que tiene
+cada uno de ellos
+
+Entre los componentes de un RecyclerView tenemos:
+
+a. List Item; que la definimos como la vista que tendrá los elementos dentro de nuestro layout,
+es decir, el elemento de referencia para la creación y despligue de la información.
+
+b. ViewHolder; Su función principal aparte de optimizar el rendimiento del RecyclerView, permite
+almacenar una referncia a la vista de cada elemento de la lista a mostrar.
+
+c. Adapter; La función principal de dicho elemento es vincular los datos que se mostraran en la lista.
+
+d. DataSet; Aunque este elemento depende de la implementación que se le otorgue a nuestra aplicación,
+en esencia es la lsita de objetos que utilizaremos para poblar.
+
+
