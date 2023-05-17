@@ -1,0 +1,51 @@
+Carlos Alejandro Gómez Campos - 00083521
+
+1. ¿Qué es una coroutine en Kotlin y cómo se diferencia de un hilo
+tradicional?
+
+Las coroutines son un mecanismo de programación que permite escribir código asíncrono de manera
+secuencial y estructurada en Kotlin. A diferencia de los hilos tradicionales, las coroutines son 
+concurrencia cooperativa, lo que significa que el programador tiene el control para decidir cuándo 
+se suspende y reanuda.
+
+
+2. ¿Cuál es la importancia de la suspensión en las coroutines y cómo se
+implementa?
+
+La importancia de la suspensión en las coroutines radica en su capacidad para liberar el hilo de 
+ejecución mientras una tarea espera por una operación costosa, como la lectura o escritura en disco, 
+operaciones de red o consultas a bases de datos. En lugar de bloquear el hilo de ejecución, la 
+coroutine se suspende y el hilo puede ser utilizado para realizar otras tareas útiles en ese tiempo, lo 
+que mejora significativamente la capacidad de respuesta y la eficiencia general del programa.
+
+La suspensión en las coroutines se implementa utilizando puntos de suspensión explícitos en el código. 
+Estos puntos de suspensión indican al sistema que una coroutine está dispuesta a ceder el control y 
+puede ser pausada en ese punto. 
+
+
+3. ¿Cuál es el propósito del Dispatcher en las coroutines y cómo se elige
+uno adecuado para cada tarea?
+
+
+- Main: Ejecuta coroutines en el hilo principal de la aplicación, que es también su hilo UI. Esto se
+puede utilizar para actualizar la interfaz de usuario o llevar a cabo otras acciones que requieren la 
+participación de la interfaz de usuario
+
+
+- Default: Es el Dispatcher por defecto y está diseñado para tareas de computación intensiva. Puede 
+utilizar múltiples hilos según la disponibilidad de los recursos del sistema.
+
+- IO: Está optimizado para operaciones de entrada/salida (I/O). Puede usar un grupo de hilos o hilos 
+especializados para manejar operaciones I/O no bloqueantes, como lectura/escritura de archivos o 
+llamadas a servicios de red.
+
+- Unconfined: Este Dispatcher no impone ninguna restricción sobre el hilo en el que se ejecuta la 
+coroutine. Puede ser útil en ciertos escenarios, pero es importante tener cuidado con su uso, ya que la 
+coroutine podría ejecutarse en el hilo principal y bloquearlo si la tarea es costosa.
+
+
+4. ¿Cuál es el propósito y el uso de la función async en las coroutines?
+
+El propósito principal que presetan es; en lugar de esperar a que una operación se complete antes de 
+continuar con la siguiente instrucción, el código asíncrono permite que múltiples tareas se ejecuten de
+forma concurrente, sin bloquear el hilo principal y sin detener la ejecución del programa.
